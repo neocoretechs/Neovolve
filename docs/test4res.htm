@@ -1,0 +1,498 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<table BORDER cols=6 cellspacing=0 cellpadding=3 >
+  <tr> 
+    <td colspan="5">test4ColumnFixture</td>
+  </tr>
+  <tr> 
+    <td width="70">toStrip</td>
+    <td width="104">fromStrippee</td>
+    <td width="71">strippedA()</td>
+    <td width="71">strippedB()</td>
+    <td width="71">strippedC()</td>
+  </tr>
+  <tr> 
+    <td width="70">0</td>
+    <td width="104">00000000</td>
+    <td width="71" bgcolor="#ffcfcf">0 <font size=-1 color=#c08080><i>expected</i></font><hr>000 <font size=-1 color=#c08080><i>actual</i></font></td>
+    <td width="71" bgcolor="#ffffcf">0<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">0<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td height="34" width="70">0</td>
+    <td height="34" width="104">0000000099999</td>
+    <td height="34" width="71" bgcolor="#cfffcf">99999</td>
+    <td height="34" width="71" bgcolor="#ffffcf">99999<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td height="34" width="71" bgcolor="#ffffcf">99999<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">0</td>
+    <td width="104">123456789</td>
+    <td width="71" bgcolor="#ffcfcf">123456789 <font size=-1 color=#c08080><i>expected</i></font><hr>89 <font size=-1 color=#c08080><i>actual</i></font></td>
+    <td width="71" bgcolor="#ffffcf">123456789<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">123456789<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">0</td>
+    <td width="104">10000</td>
+    <td width="71" bgcolor="#ffcfcf">10000 <font size=-1 color=#c08080><i>expected</i></font><hr>000 <font size=-1 color=#c08080><i>actual</i></font></td>
+    <td width="71" bgcolor="#ffffcf">10000<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">10000<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">0</td>
+    <td width="104">000000000000111</td>
+    <td width="71" bgcolor="#cfffcf">111</td>
+    <td width="71" bgcolor="#ffffcf">111<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">111<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">1</td>
+    <td width="104">11111111111234</td>
+    <td width="71" bgcolor="#ffcfcf">234 <font size=-1 color=#c08080><i>expected</i></font><hr>4 <font size=-1 color=#c08080><i>actual</i></font></td>
+    <td width="71" bgcolor="#ffffcf">234<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">234<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">1</td>
+    <td width="104">1987</td>
+    <td width="71" bgcolor="#ffcfcf">987 <font size=-1 color=#c08080><i>expected</i></font><hr>7 <font size=-1 color=#c08080><i>actual</i></font></td>
+    <td width="71" bgcolor="#ffffcf">987<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">987<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">1</td>
+    <td width="104">1</td>
+    <td width="71" bgcolor="#cfffcf">1</td>
+    <td width="71" bgcolor="#ffffcf">1<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf">1<hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+  <tr> 
+    <td width="70">1</td>
+    <td width="104">19999999999</td>
+    <td width="71" bgcolor="#cfffcf"> 
+      <p>9999999999</p>
+    </td>
+    <td width="71" bgcolor="#ffffcf"> 
+      <p>9999999999</p>
+    <hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 1 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedB(test4ColumnFixture.java:13)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+    <td width="71" bgcolor="#ffffcf"> 
+      <p>9999999999</p>
+    <hr><font size=-2><pre>java.lang.ArrayIndexOutOfBoundsException: 2 >= 1
+	at java.util.Vector.elementAt(Vector.java:427)
+	at test4.strip(test4.java:48)
+	at test4ColumnFixture.strippedC(test4ColumnFixture.java:16)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:324)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.invoke(TypeAdapter.java:105)
+	at com.neocoretechs.neovolve.fit.TypeAdapter.get(TypeAdapter.java:89)
+	at com.neocoretechs.neovolve.fit.Fixture.check(Fixture.java:229)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.check(ColumnFixture.java:62)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doCell(ColumnFixture.java:46)
+	at com.neocoretechs.neovolve.fit.Fixture.doCells(Fixture.java:111)
+	at com.neocoretechs.neovolve.fit.Fixture.doRow(Fixture.java:105)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRow(ColumnFixture.java:32)
+	at com.neocoretechs.neovolve.fit.Fixture.doRows(Fixture.java:99)
+	at com.neocoretechs.neovolve.fit.ColumnFixture.doRows(ColumnFixture.java:22)
+	at com.neocoretechs.neovolve.fit.Fixture.doTable(Fixture.java:93)
+	at com.neocoretechs.neovolve.fit.Fixture.doTables(Fixture.java:80)
+	at com.neocoretechs.neovolve.fit.FileRunner.process(FileRunner.java:29)
+	at com.neocoretechs.neovolve.fit.FileRunner.run(FileRunner.java:22)
+	at com.neocoretechs.neovolve.fit.FileRunner.main(FileRunner.java:17)
+</pre></font></td>
+  </tr>
+</table>
+</body>
+</html>
