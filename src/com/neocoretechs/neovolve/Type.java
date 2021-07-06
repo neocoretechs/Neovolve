@@ -14,6 +14,8 @@ import java.io.*;
  * @version $Id: Type.java,v 1.2 2000/10/12 15:22:55 groovyjava Exp $
  */
 public class Type extends Object implements Serializable {
+  private static final long serialVersionUID = 2763509811283151968L;
+
   private static int maxtype = 0;
 
   public static Type Boolean = new Type("boolean");

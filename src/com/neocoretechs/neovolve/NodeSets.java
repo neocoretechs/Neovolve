@@ -4,14 +4,26 @@ import com.neocoretechs.neovolve.objects.*;
 import java.util.Vector;
 import java.util.Enumeration;
 import java.util.Hashtable;
-
+/**
+ * Many of these methods allow us to extract the proper Function arrays from Vectors
+ * of Class types that determine all the Functions related to a particular object type in the
+ * objects package.
+ * The primary method getNodeSets returns the 2D array for Functions by iterating the Vector
+ * and calling specific methods to return the 1D Function arrays for each class type encountered.
+ * @author jg
+ *
+ */
 public class NodeSets {
         static Hashtable mappedTypes = new Hashtable();
 
         public NodeSets() {
                 mappedTypes.clear();
         }
-
+        /**
+         * Return the 2D Function array for each element in the Vector
+         * @param v
+         * @return
+         */
         public static Function[][] getNodeSets(Vector v) {
                 // always set up boolean, theres no logic without it jim
                 putClassIfNotExisting(Function.booleanClass, getBoolean());
@@ -30,7 +42,7 @@ public class NodeSets {
                                                 putClassIfNotExisting(targetClass, getNumber(targetClass));
                                         } else {
                                                 if( targetClass.equals(ArrayLists.arrayListClass) ) {
-                                                        putClassIfNotExisting(targetClass, getArrayList());
+                                                	 putClassIfNotExisting(targetClass, getArrayList());
                                                 }
                                         }
                                 }
@@ -50,7 +62,11 @@ public class NodeSets {
                 }
                 return retFuncs;                        
         }
-
+        /**
+         * Main table holding class types checked for mapClass and nodeSets placed if not there.
+         * @param mapClass
+         * @param nodeSets
+         */
         public static void putClassIfNotExisting(Class mapClass, Function[] nodeSets) {
                 if( mappedTypes.get(mapClass) == null )
                         mappedTypes.put(mapClass, nodeSets);
@@ -70,6 +86,7 @@ public class NodeSets {
                         new TwoThings() };
         }
         /**
+        * Get the function array for Class of type: 
         * Class integerClass = Integer.class;
         * Class longClass = Long.class;
         * Class floatClass = Float.class;
@@ -87,7 +104,10 @@ public class NodeSets {
                         new LessThan(ofType),
                         new Equals(ofType) };
        }
-
+        /**
+         * 
+         * @return All functions acting on Strings
+         */
        public static Function[] getString() {
                 return new Function[]{
                         new If(Strings.stringClass),
@@ -106,6 +126,10 @@ public class NodeSets {
                         new StartsWith(Strings.stringClass, Strings.stringClass),
                         new EndsWith(Strings.stringClass, Strings.stringClass) };
         }
+       	/**
+       	 * 
+       	 * @return All functions acting on ArrayLists
+       	 */
         public static Function[] getArrayList() {
                 return new Function[]{
                         // ArrayList
@@ -116,6 +140,11 @@ public class NodeSets {
                         new Remove(ArrayLists.arrayListClass),
                         new Sort(ArrayLists.arrayListClass)  };
        }
+        /**
+         * All Functions acting on ContainedVariable typed container ArrayList
+         * @param ofType
+         * @return
+         */
         public static Function[] getArrayList(Class ofType) {
                 return new Function[]{
                         // ArrayList

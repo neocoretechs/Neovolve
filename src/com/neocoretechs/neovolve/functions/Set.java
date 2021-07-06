@@ -3,11 +3,12 @@ import com.neocoretechs.neovolve.*;
 import java.io.*;
 
 /**
- * Set function, to set element in a colleciton
+ * Set function, to set element in a collection. This is part of the Collection and ContainedVariable framework.
  * @author Groff 2/2003
  */
 public class Set extends Function implements Serializable {
-  Class childArg2;
+	private static final long serialVersionUID = 5648056207979774530L;
+	Class childArg2;
   /**
    * Creates a set node of the given type, always returning object
    * SET(collection object index)

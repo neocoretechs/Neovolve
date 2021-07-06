@@ -45,7 +45,7 @@ public class TestWorld extends World implements Serializable {
         public TestWorld() throws IOException {
                  selectionMethod = new GreedyOverselection();
                  try {
-                        psh = new BufferedTreeSet("neovolve",10);
+                        psh = new BufferedTreeSet("neovolve", "BTree", 100);
                         ((List) psh).clear();
                  } catch(IllegalAccessException iae) {}
         }
@@ -60,12 +60,12 @@ public class TestWorld extends World implements Serializable {
                 // individual
                 //Class[] types = {Function.integerClass};
                 // return type for string functions
-                Class[] types = {Strings.stringClass};
+                //--Class[] types = {Strings.stringClass};
                 // Return type for ArrayLists (i.e. all pairs)
-                // Class[] types = {ArrayLists.arrayListClass};
+                Class[] types = {ArrayLists.arrayListClass};
                 // arguments to each chromosome, creates an "argument" function ARG0..ARGN 
-                //Class[][] argTypes = { {ArrayLists.arrayListClass} };
-                Class[][] argTypes = { {Strings.stringClass, Strings.stringClass} };
+                Class[][] argTypes = { {ArrayLists.arrayListClass} };
+                //--Class[][] argTypes = { {Strings.stringClass, Strings.stringClass} };
                 argVals = new Object[2];
  
                 // define variables and functions that determine the domain
@@ -341,7 +341,7 @@ public class TestWorld extends World implements Serializable {
                 try {
                         if( rawFit == 0.0F ) {
                         	System.out.println("Storing..."+ind.hashCode());
-                            psh.add((Comparable) ind);
+                            psh.put((Comparable) ind);
                         }
                 } catch(IOException ioe) {
                         System.out.println("Persistent storage subsystem failed to store individual "+ind);

@@ -1,6 +1,5 @@
 package com.neocoretechs.neovolve.functions;
 import com.neocoretechs.neovolve.*;
-import java.util.*;
 import java.io.*;
 
 /**
@@ -15,7 +14,8 @@ import java.io.*;
  * @version $Id: ADF.java,v 1.1 2000/10/12 15:19:39 groovyjava Exp $
  */
 public class ADF extends Function implements Serializable {
-
+	private static final long serialVersionUID = 1L;
+	
 	public static ADF[] ADFs;
 
 	static {
@@ -151,7 +151,7 @@ public class ADF extends Function implements Serializable {
     return individual.execute_double(chromosomeNum, vals);
   }
 
-  public Class getChildType(int i) {
+  public Class<?> getChildType(int i) {
     return individual.getChromosome(chromosomeNum).getArgType(i);
   }
 

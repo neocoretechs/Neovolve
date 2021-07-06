@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 /**
+ * This is part of the Container/ContainedVaraible Collection framework.
+ * Notice the interfaces implemented here, these denote the static interfaces in the classes that
+ * allow compatibility with the Neovolve Collections framework.
  * Title: ArrayLists
  * Description: ArrayLists data type
  * Copyright:    Copyright (c) 2003
@@ -20,7 +23,8 @@ public class ArrayLists implements Serializable, AddTo.Compatible, AddAt.Compati
                                               Sort.Compatible,
                                               ContainedVariable.ContainerAccess {
 
-        public ArrayList data;
+		private static final long serialVersionUID = 6379748756327119676L;
+		public ArrayList data;
         public static Class arrayListClass = ArrayLists.class;
         public transient int currentIndex = 0; // for ContainedVariable access
 

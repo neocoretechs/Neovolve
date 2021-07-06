@@ -13,7 +13,8 @@ import com.neocoretechs.neovolve.functions.ADF;
  * @version $Id: Individual.java,v 1.4 2000/10/12 15:22:55 groovyjava Exp $
  */
 public class Individual implements Serializable {
-  Chromosome[] chromosomes;
+	private static final long serialVersionUID = -1113771679241955321L;
+	Chromosome[] chromosomes;
   float fitness = -1.0f; // Adjusted Fitness
   transient int sequence;
   transient Population population;

@@ -3,7 +3,7 @@ import com.neocoretechs.neovolve.*;
 import java.io.*;
 
 /**
- * Sort function, to sort elements in a colleciton
+ * Sort function, to sort elements in a collection
  * @author Groff 2/2003
  */
 public class Sort extends Function implements Serializable {

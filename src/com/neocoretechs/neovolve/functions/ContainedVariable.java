@@ -1,7 +1,6 @@
 package com.neocoretechs.neovolve.functions;
 import com.neocoretechs.neovolve.*;
 
-import java.util.*;
 import java.io.*;
 
 /**
@@ -10,7 +9,7 @@ import java.io.*;
  * the actual container; an object implementing ContainerAccess.  From then on
  * a "Get" on container sets the index of the container object this variable returns<p>
  * Since objects are immutable in this system, modifications in functions returning deep 
- * copies, somehwat consistent results will come from this variable.  It appears objects
+ * copies, somewhat consistent results will come from this variable.  It appears objects
  * have to be immutable for the optimization effect to function properly
  * <p>
  * A named variable is created by constructing an instance of the Variable, giving
@@ -21,10 +20,11 @@ import java.io.*;
  * @author J. Groff
  */
 public class ContainedVariable extends Variable implements Serializable {
+	private static final long serialVersionUID = -7819097507621469084L;
 
-  private ContainedVariable(String name, Class type) {
-    super(name, type);
-  }
+	private ContainedVariable(String name, Class type) {
+		super(name, type);
+	}
 
   /**
    * Creates an instance of a Variable.
@@ -39,13 +39,13 @@ public class ContainedVariable extends Variable implements Serializable {
    * @since 1.0
    */
 
-  public static Variable create(String name, Class type) {
-    Variable var;
+	public static Variable create(String name, Class type) {
+		Variable var;
 
-    if ( (var=getVariable(name))!=null )
-      return var;
-    return new ContainedVariable(name, type);
-  }
+		if ( (var=getVariable(name))!=null )
+			return var;
+		return new ContainedVariable(name, type);
+	}
 
   /**
    * Sets a named variable without having to obtain a reference to the named variable.
@@ -55,9 +55,9 @@ public class ContainedVariable extends Variable implements Serializable {
    *
    * @since 1.0
    */
-  public static void set(String name, ContainerAccess value) {
-    ((Variable)vars.get(name)).value = value;
-  }
+	public static void set(String name, ContainerAccess value) {
+		((Variable)vars.get(name)).value = value;
+	}
 
   /**
    * Gets the value of a named variable without having to obtain a reference to
@@ -69,16 +69,16 @@ public class ContainedVariable extends Variable implements Serializable {
    *
    * @since 1.0
    */
-  public static Object get(String name) {
-    return ((ContainerAccess)((Variable)vars.get(name)).value).getCurrent();
-  }
+	public static Object get(String name) {
+		return ((ContainerAccess)((Variable)vars.get(name)).value).getCurrent();
+	}
 
 
-  public Object execute_object(Chromosome c, int n, Object[] args) {
-    return ((ContainerAccess)value).getCurrent();
-  }
+	public Object execute_object(Chromosome c, int n, Object[] args) {
+		return ((ContainerAccess)value).getCurrent();
+	}
 
-  public static interface ContainerAccess {
+	public static interface ContainerAccess {
         public Object getCurrent();
-  }
+	}
 }
